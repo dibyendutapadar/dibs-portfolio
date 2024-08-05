@@ -148,9 +148,12 @@ st.write("---")
 st.subheader("Tools and Technologies`🔬")
 st.write(
     """
-    - 👩‍💻 **Programming:** Python, JavaScript, HTML, CSS, SQL, PHP, Flutter
-    - 🧪 **Data Science:** Machine Learning, Deep Learning, Natural Language Processing, Generative AI, LLM, Retrieval-Augmented Generation (RAG)
-    - 📊 **Data Visualization:** Excel, Looker, Tableau, Snowflake, PowerBI
+    - 📊 **Data Analytics & Visualization:** Excel, SQL, Python, Looker, Tableau, Snowflake, PowerBI
+    - 🛠️ **Workspace:** Miro, Whimsical, Confluence, Notion
+    - 🧪  **Project Management:** Trello, Jira, Aha, Rally
+    - 🎨 **Design Tools:** Invision, Balsamiq, Figma, Mockup
+    - 💻 **Programming & scripting:** HTML, CSS, JavaScript, PHP, Flutter, Python (Flask, Django, Streamlit)
+    - 🧬 **Data Science:** Modeling (Regression, Classification, Forecasting), Exploratory and Predictive Analytics, LLM, Generative AI, LangChain, RAG (Retrieval-Augmented Generation), crew AI
     """
 )
 
@@ -162,4 +165,4 @@ st.subheader("Personal Projects 🧙‍♂️")
 
 st.write(PROJECTS)
 
-go_to_full_page("More Personal Projects" , "Personal Projects")
+go_to_full_page("Details of Personal Projects" , "Personal Projects")
