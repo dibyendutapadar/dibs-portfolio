@@ -15,7 +15,7 @@ preview_doc_chat = [f"""{current_dir}/assets/personal/doc_chat/{example}""" for 
 # preview__llm_chatbot = [f"""{current_dir}/assets/work/alexsys/{example}""" for example in ['home.png','auth.png','add_person.png']]
 
 # ------------ CONSTANTS ----------
-PAGE_TITLE = "Personal Projects | Et-tali Mouad"
+PAGE_TITLE = "Personal Projects | Dibyendu Tapadar"
 PAGE_ICON = "🏛"
 
 #-------- PERSONAL PROJECTS CONTENT----------

@@ -12,9 +12,7 @@ css_file = current_dir / "styles" / "main.css"
 # ASTEK_PIC_PATH = current_dir / "assets" / "work" /  "astek" / "astek.png"
 # ALEXSYS_PIC_PATH = current_dir / "assets" / "work" /  "alexsys" / "alexsys.png"
 # DADVISOR_PIC_PATH = current_dir / "assets" / "work" /  "digitaladvisor" / "digitaladvisor.png"
-# preview_aqsone = [f"""{current_dir}/assets/work/aqsone/{example}""" for example in ['example_1.png','example_2.png']]
-# preview_astek = [f"""{current_dir}/assets/work/astek/{example}""" for example in ['navigation.png','activity.png','database.png','sensor.png','data.png']]
-# preview_alexsys = [f"""{current_dir}/assets/work/alexsys/{example}""" for example in ['home.png','auth.png','add_person.png']]
+
 
 # ------------ CONSTANTS ----------
 PAGE_TITLE = "Work Experiences | Dibyendu Tapadar"
