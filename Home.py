@@ -29,12 +29,12 @@ In addition to my Product Management experience, I have a hands-on proficiency i
 
 
 PROJECTS = """
-    "🏆 LLM driven chatbot to interact with local documents (llama3.1, RAG, langchain)
-    "🏆 LLM driven chatbot to act as Hotel Booking Agent (Groq API)
-    "🏆 Interactive Demand Forecasting using SARIMAX and Holt-Winters (python
-    "🏆 Delivery Route Optimization Simulator (Python, Streamlit, OR_Tools)
-    "🏆 PM Interview Simulator
-    "🏆 This Portfolio
+    🏆 LLM driven chatbot to interact with local documents (llama3.1, RAG, langchain)
+    🏆 LLM driven chatbot to act as Hotel Booking Agent (Groq API)
+    🏆 Interactive Demand Forecasting using SARIMAX and Holt-Winters (python
+    🏆 Delivery Route Optimization Simulator (Python, Streamlit, OR_Tools)
+    🏆 PM Interview Simulator
+    🏆 This Portfolio
 """
 
 st.set_page_config(
@@ -159,7 +159,7 @@ st.write("---")
 # --- Projects & Accomplishments ---
 st.subheader("Personal Projects 🧙‍♂️")
 
-for project, link in PROJECTS.items():
-    st.write(PROJECTS)
+
+st.write(PROJECTS)
 
 go_to_full_page("More Personal Projects" , "Personal Projects")
