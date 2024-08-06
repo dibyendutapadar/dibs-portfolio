@@ -21,7 +21,7 @@ PAGE_ICON = "🏛"
 #-------- PERSONAL PROJECTS CONTENT----------
 
 AI_TRAVEL_AGENT_TITLE = "AI Travel agent for Stay and Itinerary Planning"
-AI_TRAVEL_AGENT_GITHUB = "https://github.com/dibyendutapadar/travel-agent-crewai-ollama"
+AI_TRAVEL_AGENT_GITHUB = "https://github.com/dibyendutapadar/travel-agent-crewai"
 AI_TRAVEL_AGENT_ARTICLE = "https://www.linkedin.com/pulse/ai-travel-agent-crewai-ollama-dibyendu-tapadar-dvyxc/?trackingId=gp3S8XR1yjhnsQWQmg39ig%3D%3D"
 AI_TRAVEL_AGENT_APPLINK =""
 AI_TRAVEL_AGENT_KEYWORDS = "LLM, LangChain, Ollama, crewAI, TreavelTech, OTA"
