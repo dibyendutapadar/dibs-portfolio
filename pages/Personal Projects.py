@@ -19,6 +19,57 @@ PAGE_TITLE = "Personal Projects | Dibyendu Tapadar"
 PAGE_ICON = "🏛"
 
 #-------- PERSONAL PROJECTS CONTENT----------
+
+AI_TRAVEL_AGENT_TITLE = "AI Travel agent for Stay and Itinerary Planning"
+AI_TRAVEL_AGENT_GITHUB = "https://github.com/dibyendutapadar/travel-agent-crewai-ollama"
+AI_TRAVEL_AGENT_ARTICLE = "https://www.linkedin.com/pulse/ai-travel-agent-crewai-ollama-dibyendu-tapadar-dvyxc/?trackingId=gp3S8XR1yjhnsQWQmg39ig%3D%3D"
+AI_TRAVEL_AGENT_APPLINK =""
+AI_TRAVEL_AGENT_KEYWORDS = "LLM, LangChain, Ollama, crewAI, TreavelTech, OTA"
+AI_TRAVEL_AGENT_STACK = "Ollama, CrewAI, Streamlit"
+AI_TRAVEL_AGENT_DESCRIPTION = """
+    - ✔ Traditional OTAs like MakeMyTrip and Booking often limit users to specific filters and search parameters. Our goal is to provide an unrestricted search experience where users can express their unique travel needs and receive customized suggestions.
+    - 💠 Key Features:
+        - 🔸 Personalized Search: Use detailed descriptions to find the perfect stay.
+            - Example: "A secluded stay by a riverside within 200 km from Bangalore, with high-speed Wi-Fi and parking."
+            - Example: "A homestay right on the beach in Goa, within 3000 rupees per night."
+        - 🔸 AI-Powered Recommendations: Get tailored travel options based on your inputs.
+        - 🔸 Detailed Itineraries: Receive comprehensive travel itineraries based on selected stays and user interests.
+    - 💡 How it works
+        - Intent Mapper Agent: Extracts key details from the user's travel query.
+        - Finder Agent: Searches for suitable travel recommendations.
+        - Formatter Agent: Formats the recommendations for the user.
+        - Itinerary Maker Agent: Creates detailed travel itineraries
+    """
+
+
+
+TRAFFIC_SIGNAL_TITLE = "Automated Traffic Signal duration simulator based on real time traffic data"
+TRAFFIC_SIGNAL_GITHUB = ""
+TRAFFIC_SIGNAL_ARTICLE = "https://dibyendutapadar.wixsite.com/my-site/post/intelligent-traffic-signal-control"
+TRAFFIC_SIGNAL_APPLINK ="https://dibyendutapadar.pythonanywhere.com/traffic"
+TRAFFIC_SIGNAL_KEYWORDS = "SmartCity, Traffic Signal, Traffic Control, Python"
+TRAFFIC_SIGNAL_STACK = "Python, Django, Bing Maps"
+TRAFFIC_SIGNAL_DESCRIPTION = """
+    - ✔ To address the complexities of traffic signal coordination, I introduce a web application that empowers traffic engineers and city planners to optimize signal durations based on real-time traffic flow data.
+    - 💡 How it works
+        - 🔸 Interactive Map Selection: Users can select the location of a traffic signal crossing with the help of an interactive Bing Map interface.
+        - 🔸 Direction Input: The application guides users through the process of inputting the number of directions traffic flows across the crossing.
+        - 🔸 Dynamic Traffic Flow Calculation: The system integrates with bing API to fetch real-time traffic flow data between specified coordinates.
+        - 🔸 Result Display: The application presents the calculated signal durations in a clear and concise tabular format.
+    """
+
+
+
+
+
+
+
+
+
+
+
+
+
 DOC_CHAT_TITLE = "Chat with Local Documents "
 DOC_CHAT_GITHUB = "https://github.com/dibyendutapadar/chat-with-pdf"
 DOC_CHAT_ARTICLE = "https://www.linkedin.com/pulse/using-open-source-llms-chat-internal-company-dibyendu-tapadar-5gvyc/?trackingId=W2VGGVoBMUq9gy2eeouJ3g%3D%3D"
@@ -105,13 +156,10 @@ st.title("Personal Projects")
 # --------------- HELPER FUNCTIONS -----------------------
 
 def personal_project_section(PROJECT_TITLE,GITHUB_LINK,ARTICLE_LINK, APP_LINK, PROJECT_KEYWORDS,PROJECT_STACK,PROJECT_DESCRIPTION):
-
+    st.write('\n')
     st.subheader(PROJECT_TITLE)
     st.write('---')
-    
     st.write(f'''<span style="color:#f50057; font-size: 15;">**Keywords :**</span> {PROJECT_KEYWORDS}''', unsafe_allow_html=True)
-
-    
     st.write(PROJECT_DESCRIPTION, unsafe_allow_html=True)
     st.write(f'''<span style="color:#f50057; font-size: 15;">**Technologies Used :**</span> {PROJECT_STACK}''', unsafe_allow_html=True)
     if GITHUB_LINK:
@@ -137,12 +185,14 @@ with st.expander("**Preview :** "):
         with col:
             st.image(image,width=600)
 
+st.write('\n')
+personal_project_section(AI_TRAVEL_AGENT_TITLE, AI_TRAVEL_AGENT_GITHUB, AI_TRAVEL_AGENT_ARTICLE,AI_TRAVEL_AGENT_APPLINK,AI_TRAVEL_AGENT_KEYWORDS, AI_TRAVEL_AGENT_STACK, AI_TRAVEL_AGENT_DESCRIPTION)
 
 personal_project_section(TIME_SERIES_TITLE, TIME_SERIES_GITHUB, TIME_SERIES_ARTICLE,TIME_SERIES_APPLINK,TIME_SERIES_KEYWORDS, TIME_SERIES_STACK, TIME_SERIES_DESCRIPTION)
 
-
 personal_project_section(LLM_CHATBOT_TITLE, LLM_CHATBOT_GITHUB, LLM_CHATBOT_ARTICLE,LLM_CHATBOT_APPLINK, LLM_CHATBOT_KEYWORDS, LLM_CHATBOT_STACK, LLM_CHATBOT_DESCRIPTION)
 
+personal_project_section(TRAFFIC_SIGNAL_TITLE, TRAFFIC_SIGNAL_GITHUB, TRAFFIC_SIGNAL_ARTICLE,TRAFFIC_SIGNAL_APPLINK, TRAFFIC_SIGNAL_KEYWORDS, TRAFFIC_SIGNAL_STACK, TRAFFIC_SIGNAL_DESCRIPTION)
 
 personal_project_section(DELIVERY_OPTIMIZATION_TITLE, DELIVERY_OPTIMIZATION_GITHUB,DELIVERY_OPTIMIZATION_ARTICLE,DELIVERY_OPTIMIZATION_APPLINK, DELIVERY_OPTIMIZATION_KEYWORDS, DELIVERY_OPTIMIZATION_STACK, DELIVERY_OPTIMIZATION_DESCRIPTION)
 

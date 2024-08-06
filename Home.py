@@ -29,12 +29,14 @@ In addition to my Product Management experience, I have a hands-on proficiency i
 
 
 PROJECTS = """
-    - 💠 LLM driven chatbot to interact with local documents (llama3.1, RAG, langchain)
-    - 💠 LLM driven chatbot to act as Hotel Booking Agent (Groq API)
-    - 💠 Interactive Demand Forecasting using SARIMAX and Holt-Winters (python
+    - 💠 LLM driven chatbot to interact with local documents (Ollama, RAG, langchain)
+    - 💠 CrewAI driven Travel Agent that lets travellers serach and plan their travels (CrewAI, Ollama)
+    - 💠 LLM driven chatbot to act as Hotel Booking Agent (Groq API, Streamlit)
+    - 💠 Interactive Demand Forecasting using SARIMAX and Holt-Winters (Python, Streamlit)
     - 💠 Delivery Route Optimization Simulator (Python, Streamlit, OR_Tools)
-    - 💠 PM Interview Simulator
-    - 💠 This Portfolio
+    - 💠 PM Interview Simulator (available on ChatGPT's GPT store)
+    - 💠 Traffic Signal Simulator based on real time traffic (Django, Bing Map)
+    - 💠 This Portfolio (Streamlit)
 """
 
 st.set_page_config(
@@ -138,9 +140,6 @@ skills = ["End-to-End Product Management", "Strategic Product Planning", "Produc
 icons = ["🛠️","📈","🗺️","🚀","🎨","🕵️‍♂️","⚡","👥","📊","🧩","🧠"]
 
 selected = pills("",skills ,icons)
-
-
-
 
 
 # --- Tools ---
