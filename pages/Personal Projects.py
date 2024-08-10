@@ -20,6 +20,32 @@ PAGE_ICON = "🏛"
 
 #-------- PERSONAL PROJECTS CONTENT----------
 
+IMAGE_ANALYZER_AGENT_TITLE = "Image Analysis with LLaVa and LLaMa"
+IMAGE_ANALYZER_AGENT_GITHUB = "https://github.com/dibyendutapadar/ai-agent-image-analyzer"
+IMAGE_ANALYZER_AGENT_ARTICLE = "https://www.linkedin.com/posts/dibyendu-tapadar_ai-genai-llm-activity-7227887993305325569-KPB1?utm_source=share&utm_medium=member_desktop"
+IMAGE_ANALYZER_AGENT_APPLINK =""
+IMAGE_ANALYZER_AGENT_KEYWORDS = "AI Image Analysis, LLaMA, LLAVA, CrewAI, Streamlit, Marketing, EdTech, HealthTech"
+IMAGE_ANALYZER_AGENT_STACK = "LLaMA,LLAVA,Ollama CrewAI, Streamlit"
+IMAGE_ANALYZER_AGENT_DESCRIPTION = """
+    - ✔ Use multiple Local LLMs to analyse images and perform industry specific tasks using crewai
+    - 💠 Key Features:
+        - 🔸 Insta Influencer
+            - Sifts through multiple uplaoded files and prepare detailed description
+            - The AI analyzes the chosen images and suggests captions that are not only relevant but also optimized for engagement, considering factors like trending hashtags, current events, and user-provided context."
+        - 🔸 EdTech
+            - Reads texts and describe images from scanned photos of student answer sheets
+            - The AI analyses the answers, provides feedback and marks to each answer
+        - 🔸 HealthTech
+            - Processes images such as Xray
+            - The AI analyses and provides what is wrong with the image, suggested procedures and advice for the patient
+    - 💡 How it works
+        - Streamlit interface enables the user to upload image(s)
+        - LLava multimodal model for image description agent and passes on to the next agent
+        - The next agent utilises LLama model to analyse the description and provides output to the user
+    """
+
+
+
 AI_TRAVEL_AGENT_TITLE = "AI Travel agent for Stay and Itinerary Planning"
 AI_TRAVEL_AGENT_GITHUB = "https://github.com/dibyendutapadar/travel-agent-crewai"
 AI_TRAVEL_AGENT_ARTICLE = "https://www.linkedin.com/pulse/ai-travel-agent-crewai-ollama-dibyendu-tapadar-dvyxc/?trackingId=gp3S8XR1yjhnsQWQmg39ig%3D%3D"
@@ -62,20 +88,12 @@ TRAFFIC_SIGNAL_DESCRIPTION = """
 
 
 
-
-
-
-
-
-
-
-
 DOC_CHAT_TITLE = "Chat with Local Documents "
 DOC_CHAT_GITHUB = "https://github.com/dibyendutapadar/chat-with-pdf"
 DOC_CHAT_ARTICLE = "https://www.linkedin.com/pulse/using-open-source-llms-chat-internal-company-dibyendu-tapadar-5gvyc/?trackingId=W2VGGVoBMUq9gy2eeouJ3g%3D%3D"
 DOC_CHAT_APPLINK =""
 DOC_CHAT_KEYWORDS = "LLM, RAG, LangChain, document extraction, information retrieval"
-DOC_CHAT_STACK = "LLM, RAG (Retrieval-Augmented Generation), LangChain"
+DOC_CHAT_STACK = "LLM, RAG (Retrieval-Augmented Generation), LangChain, Streamlit, Ollama"
 DOC_CHAT_DESCRIPTION = """
     - ✔ The project enables chatting and extracting information and insights from internal documents using a locally deployed LLM.
     - 💠 Key Features:
@@ -91,7 +109,7 @@ TIME_SERIES_GITHUB = "https://github.com/dibyendutapadar/time-series-forecasting
 TIME_SERIES_ARTICLE = ""
 TIME_SERIES_APPLINK ="https://time-series-forecasting-simple.streamlit.app/"
 TIME_SERIES_KEYWORDS = "time series, forecasting, SARIMAX, Holt-Winters, Streamlit"
-TIME_SERIES_STACK = "SARIMAX, Holt-Winters, Streamlit"
+TIME_SERIES_STACK = "SARIMAX, Holt-Winters, Streamlit, Python"
 TIME_SERIES_DESCRIPTION = """
     - ✔ The project involves creating a Streamlit app with an intuitive, interactive interface for demand forecasting.
     - 💠 Key Features:
@@ -103,12 +121,12 @@ TIME_SERIES_DESCRIPTION = """
 
 
 
-LLM_CHATBOT_TITLE = "LLM Driven Agent Chatbot "
+LLM_CHATBOT_TITLE = "LLM Driven Hotel Booking Chatbot "
 LLM_CHATBOT_GITHUB = "https://github.com/dibyendutapadar/streamlit_groq_chatbot"
 LLM_CHATBOT_ARTICLE = "https://www.linkedin.com/pulse/experiment-disguise-open-source-llm-hotel-bookings-agent-tapadar-osnfc/?trackingId=4MHsBSaKSWKEEF5VhId3lQ%3D%3D"
 LLM_CHATBOT_APPLINK ="https://hotel-chatbot.streamlit.app/"
 LLM_CHATBOT_KEYWORDS = "LLM, chatbot, Groq API, hotel booking"
-LLM_CHATBOT_STACK = "LLM, Groq API"
+LLM_CHATBOT_STACK = "LLM, Groq API, Streamlit"
 LLM_CHATBOT_DESCRIPTION = """
     - ✔ The project involves building a chatbot powered by an LLM to assist guests with information, queries, and bookings.
     - 💠 Key Features:
@@ -125,7 +143,7 @@ DELIVERY_OPTIMIZATION_GITHUB = "https://github.com/dibyendutapadar/delivery-rout
 DELIVERY_OPTIMIZATION_ARTICLE = ""
 DELIVERY_OPTIMIZATION_APPLINK ="https://delivery-routing-optimization.streamlit.app/"
 DELIVERY_OPTIMIZATION_KEYWORDS = "route optimization, delivery, OR-Tools, Python"
-DELIVERY_OPTIMIZATION_STACK = "OR-Tools, Python"
+DELIVERY_OPTIMIZATION_STACK = "OR-Tools, Python, Streamlit"
 DELIVERY_OPTIMIZATION_DESCRIPTION = """
     - ✔ The project involves creating an application to optimize delivery routes among delivery agents in a city.
     - 💠 Key Features:
@@ -187,16 +205,11 @@ with st.expander("**Preview :** "):
 
 st.write('\n')
 personal_project_section(AI_TRAVEL_AGENT_TITLE, AI_TRAVEL_AGENT_GITHUB, AI_TRAVEL_AGENT_ARTICLE,AI_TRAVEL_AGENT_APPLINK,AI_TRAVEL_AGENT_KEYWORDS, AI_TRAVEL_AGENT_STACK, AI_TRAVEL_AGENT_DESCRIPTION)
-
+personal_project_section(IMAGE_ANALYZER_AGENT_TITLE, IMAGE_ANALYZER_AGENT_GITHUB, IMAGE_ANALYZER_AGENT_ARTICLE,IMAGE_ANALYZER_AGENT_APPLINK, IMAGE_ANALYZER_AGENT_KEYWORDS, IMAGE_ANALYZER_AGENT_STACK, IMAGE_ANALYZER_AGENT_DESCRIPTION)
 personal_project_section(TIME_SERIES_TITLE, TIME_SERIES_GITHUB, TIME_SERIES_ARTICLE,TIME_SERIES_APPLINK,TIME_SERIES_KEYWORDS, TIME_SERIES_STACK, TIME_SERIES_DESCRIPTION)
-
 personal_project_section(LLM_CHATBOT_TITLE, LLM_CHATBOT_GITHUB, LLM_CHATBOT_ARTICLE,LLM_CHATBOT_APPLINK, LLM_CHATBOT_KEYWORDS, LLM_CHATBOT_STACK, LLM_CHATBOT_DESCRIPTION)
-
 personal_project_section(TRAFFIC_SIGNAL_TITLE, TRAFFIC_SIGNAL_GITHUB, TRAFFIC_SIGNAL_ARTICLE,TRAFFIC_SIGNAL_APPLINK, TRAFFIC_SIGNAL_KEYWORDS, TRAFFIC_SIGNAL_STACK, TRAFFIC_SIGNAL_DESCRIPTION)
-
 personal_project_section(DELIVERY_OPTIMIZATION_TITLE, DELIVERY_OPTIMIZATION_GITHUB,DELIVERY_OPTIMIZATION_ARTICLE,DELIVERY_OPTIMIZATION_APPLINK, DELIVERY_OPTIMIZATION_KEYWORDS, DELIVERY_OPTIMIZATION_STACK, DELIVERY_OPTIMIZATION_DESCRIPTION)
-
-
 personal_project_section(INTERVIEW_SIMULATOR_TITLE, INTERVIEW_SIMULATOR_GITHUB, INTERVIEW_SIMULATOR_ARTICLE, INTERVIEW_SIMULATOR_APPLINK, INTERVIEW_SIMULATOR_KEYWORDS, INTERVIEW_SIMULATOR_STACK, INTERVIEW_SIMULATOR_DESCRIPTION)
 
 

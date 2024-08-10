@@ -29,14 +29,15 @@ In addition to my Product Management experience, I have a hands-on proficiency i
 
 
 PROJECTS = """
-    - 💠 LLM driven chatbot to interact with local documents (Ollama, RAG, langchain)
-    - 💠 CrewAI driven Travel Agent that lets travellers serach and plan their travels (CrewAI, Ollama)
-    - 💠 LLM driven chatbot to act as Hotel Booking Agent (Groq API, Streamlit)
-    - 💠 Interactive Demand Forecasting using SARIMAX and Holt-Winters (Python, Streamlit)
-    - 💠 Delivery Route Optimization Simulator (Python, Streamlit, OR_Tools)
-    - 💠 PM Interview Simulator (available on ChatGPT's GPT store)
-    - 💠 Traffic Signal Simulator based on real time traffic (Django, Bing Map)
-    - 💠 This Portfolio (Streamlit)
+    - 💠 LLM driven **chatbot** to interact with **local documents** (Ollama, RAG, langchain)
+    - 💠 **Image Analyser** with llama and llava and AI agents to serve multiple organizational use cases (Ollama, CrewAI)
+    - 💠 CrewAI based **Travel Agent** that lets travellers serach and plan their travels (CrewAI, Ollama)
+    - 💠 LLM driven **chatbo**t to act as **Hotel Booking** Agent (Groq API, Streamlit)
+    - 💠 Interactive **Demand Forecasting** using SARIMAX and Holt-Winters (Python, Streamlit)
+    - 💠 **Delivery Route Optimization** Simulator (Python, Streamlit, OR_Tools)
+    - 💠 PM **Interview Simulator** (available on ChatGPT's GPT store)
+    - 💠 **Traffic Signal Simulator** based on real time traffic (Django, Bing Map)
+    - 💠 This **Portfolio** (Streamlit)
 """
 
 st.set_page_config(
