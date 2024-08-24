@@ -31,6 +31,7 @@ In addition to my Product Management experience, I have a hands-on proficiency i
 PROJECTS = """
     - 💠 LLM driven **chatbot** to interact with **local documents** (Ollama, RAG, langchain)
     - 💠 **Image Analyser** with llama and llava and AI agents to serve multiple organizational use cases (Ollama, CrewAI)
+    - 💠 **LLM driven Adaptive learning app** lets students to choose their interest and proficiency, and test themselves in an adaptive learning evironment (llama-index, Groq)
     - 💠 CrewAI based **Travel Agent** that lets travellers serach and plan their travels (CrewAI, Ollama)
     - 💠 LLM driven **chatbo**t to act as **Hotel Booking** Agent (Groq API, Streamlit)
     - 💠 Interactive **Demand Forecasting** using SARIMAX and Holt-Winters (Python, Streamlit)

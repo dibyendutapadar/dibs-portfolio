@@ -19,6 +19,28 @@ PAGE_TITLE = "Personal Projects | Dibyendu Tapadar"
 PAGE_ICON = "🏛"
 
 #-------- PERSONAL PROJECTS CONTENT----------
+ADAPTIVE_LEARNING_TITLE = "Adaptive Learning without question-answer dataset"
+ADAPTIVE_LEARNING_GITHUB = "https://github.com/dibyendutapadar/adaptive-learning"
+ADAPTIVE_LEARNING_ARTICLE = "https://www.linkedin.com/posts/dibyendu-tapadar_ai-edtech-genai-activity-7232618708748095489-7lRV?utm_source=share&utm_medium=member_desktop"
+ADAPTIVE_LEARNING_APPLINK ="https://adaptive-learning.streamlit.app/"
+ADAPTIVE_LEARNING_KEYWORDS = "Adaptive learning, llama-index, GenAI, EdTech"
+ADAPTIVE_LEARNING_STACK = "Python, Groq, llama-index, llama3.1-8B, SQLite, Streamlit, Pydantic"
+ADAPTIVE_LEARNING_DESCRIPTION = """
+    - ✔ Generates multiple choice questions based on a students chose topic, grade and proficiency level
+    - 💡 How it works
+        - Streamlit interface enables the user to to enter grade, topic of interest, current proficiency level (estiamated) and desired proficiency level
+        - Inputs are wrapped in a prompt and response is generated through an inference API call. Response is structured through pydantic.
+        - Student is asked the question, and based on the answer, the proficiency is updated
+        - Interaction data is saved in SQLite table and added as a context to the prompt of the next API call.
+        - Proficiency is increased/decreased based on the students response using a statistical model.
+    """
+
+
+
+
+
+
+
 
 IMAGE_ANALYZER_AGENT_TITLE = "Image Analysis with LLaVa and LLaMa"
 IMAGE_ANALYZER_AGENT_GITHUB = "https://github.com/dibyendutapadar/ai-agent-image-analyzer"
@@ -206,6 +228,7 @@ with st.expander("**Preview :** "):
 st.write('\n')
 personal_project_section(AI_TRAVEL_AGENT_TITLE, AI_TRAVEL_AGENT_GITHUB, AI_TRAVEL_AGENT_ARTICLE,AI_TRAVEL_AGENT_APPLINK,AI_TRAVEL_AGENT_KEYWORDS, AI_TRAVEL_AGENT_STACK, AI_TRAVEL_AGENT_DESCRIPTION)
 personal_project_section(IMAGE_ANALYZER_AGENT_TITLE, IMAGE_ANALYZER_AGENT_GITHUB, IMAGE_ANALYZER_AGENT_ARTICLE,IMAGE_ANALYZER_AGENT_APPLINK, IMAGE_ANALYZER_AGENT_KEYWORDS, IMAGE_ANALYZER_AGENT_STACK, IMAGE_ANALYZER_AGENT_DESCRIPTION)
+personal_project_section(ADAPTIVE_LEARNING_TITLE, ADAPTIVE_LEARNING_GITHUB, ADAPTIVE_LEARNING_ARTICLE,ADAPTIVE_LEARNING_APPLINK,ADAPTIVE_LEARNING_KEYWORDS, ADAPTIVE_LEARNING_STACK, ADAPTIVE_LEARNING_DESCRIPTION)
 personal_project_section(TIME_SERIES_TITLE, TIME_SERIES_GITHUB, TIME_SERIES_ARTICLE,TIME_SERIES_APPLINK,TIME_SERIES_KEYWORDS, TIME_SERIES_STACK, TIME_SERIES_DESCRIPTION)
 personal_project_section(LLM_CHATBOT_TITLE, LLM_CHATBOT_GITHUB, LLM_CHATBOT_ARTICLE,LLM_CHATBOT_APPLINK, LLM_CHATBOT_KEYWORDS, LLM_CHATBOT_STACK, LLM_CHATBOT_DESCRIPTION)
 personal_project_section(TRAFFIC_SIGNAL_TITLE, TRAFFIC_SIGNAL_GITHUB, TRAFFIC_SIGNAL_ARTICLE,TRAFFIC_SIGNAL_APPLINK, TRAFFIC_SIGNAL_KEYWORDS, TRAFFIC_SIGNAL_STACK, TRAFFIC_SIGNAL_DESCRIPTION)
